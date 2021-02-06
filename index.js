@@ -65,6 +65,20 @@ var app = new Vue({
       buttonreverseC: {
         seen: false
       },
+      buttonsquizz: {
+        a:{
+          seen:false
+        },
+        b:{
+          seen:false
+        },
+        c:{
+          seen:false
+        },
+        d:{
+          seen:false
+        }
+      },
       planszeTypA: {
         src: planszeA
       },
@@ -92,8 +106,12 @@ var app = new Vue({
       this.ikon2.seen = false;
       this.ikon3.seen = false;
       this.plansza1.seen = true;
-      this.buttonreverse.seen = true;
-      this.buttonforward.seen = true;
+      //this.buttonreverse.seen = true;
+      //this.buttonforward.seen = true;
+      this.buttonsquizz.a.seen = true;
+      this.buttonsquizz.b.seen = true;
+      this.buttonsquizz.c.seen = true;
+      this.buttonsquizz.d.seen = true;
     },
     ikon2change1: function () {
       this.ikon2.hover = false;
